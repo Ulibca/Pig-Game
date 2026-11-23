@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://cdx6i5ruiwwv5"]
+
+[ext_resource type="PackedScene" uid="uid://dphsu2fxre87l" path="res://Cube/cube.tscn" id="1_u52ul"]
+[ext_resource type="Script" uid="uid://bkr4gthkvh1yu" path="res://level.gd" id="1_vonw3"]
+
+[node name="level" type="Node2D" unique_id=973114300]
+script = ExtResource("1_vonw3")
+
+[node name="Cube" parent="." unique_id=2068876283 instance=ExtResource("1_u52ul")]
+position = Vector2(480, 392)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2083469004]
+
+[node name="TurnScoreLabel" type="Label" parent="CanvasLayer" unique_id=168474880]
+anchors_preset = -1
+anchor_right = 0.062000003
+anchor_bottom = 0.074
+offset_left = 56.0
+offset_top = 512.0
+offset_right = 216.57599
+offset_bottom = 544.048
+text = "Очик текущего раунда: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Player1ScoreLabel" type="Label" parent="CanvasLayer" unique_id=2072527005]
+anchors_preset = -1
+anchor_right = 0.062000003
+anchor_bottom = 0.074
+offset_left = 848.0
+offset_top = 112.0
+offset_right = 1008.576
+offset_bottom = 144.048
+text = "Игрок 1: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Player2ScoreLabel" type="Label" parent="CanvasLayer" unique_id=2092499690]
+anchors_preset = -1
+anchor_right = 0.062000003
+anchor_bottom = 0.074
+offset_left = 856.0
+offset_top = 448.0
+offset_right = 1016.576
+offset_bottom = 480.048
+text = "Игрок 2: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TurnInfoLabel" type="Label" parent="CanvasLayer" unique_id=1449535940]
+anchors_preset = -1
+anchor_right = 0.062000003
+anchor_bottom = 0.074
+offset_left = 472.0
+offset_top = 160.0
+offset_right = 632.576
+offset_bottom = 192.048
+text = "Подсказки и статус игры"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MenuButton" type="Button" parent="CanvasLayer" unique_id=1244152060]
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 320.0
+offset_bottom = 128.0
+text = "В МЕНЮ"
+
+[node name="HoldButton" type="Button" parent="CanvasLayer" unique_id=1520759562]
+offset_left = 488.0
+offset_top = 512.0
+offset_right = 680.0
+offset_bottom = 576.0
+text = "Забрать Очки"
+
+[node name="RestartButton" type="Button" parent="CanvasLayer" unique_id=1098950173]
+offset_left = 512.0
+offset_top = 280.0
+offset_right = 640.0
+offset_bottom = 344.0
+text = "ЕЩЕ РАЗОК?"
